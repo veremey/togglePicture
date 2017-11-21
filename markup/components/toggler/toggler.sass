@@ -83,6 +83,8 @@
 		top: 0
 		left: calc(100% + 20px)
 		height: 100%
+		+r(750)
+			left: calc(100% + 7px)
 	&__desc
 		position: relative
 		white-space: nowrap
@@ -100,7 +102,7 @@
 			height: 4px
 			background-image: repeating-linear-gradient(to right, $red 4px, $red 8px, #fff 8px, #fff 12px)
 		+r(800)
-			font-size: get-vw(30px)
+			font-size: get-vw(28px)
 			&:after
 				height: 2px
 				background-image: repeating-linear-gradient(to right, $red 2px, $red 4px, #fff 4px, #fff 6px)

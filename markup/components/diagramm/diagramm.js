@@ -1,14 +1,14 @@
 // const Chart = require('../../../node_modules/chart.js/dist/Chart.js');
 
+
 window.addEventListener('load', function () {
-	// var ctx = document.getElementById('myChart').getContext('2d');
+
 	let plotLineChart = document.querySelector('#line-chart');
 	var on  = true;
 	var off = false;
 
 	$('.picture__curtain').addClass('is-load');
 
-	// setTimeout(handler: any, timeout?: long, arguments...: any)
 	setTimeout(function () {
 		$(' .picture__img').removeClass('is-active');
 		$(' .picture_on').addClass('is-active');

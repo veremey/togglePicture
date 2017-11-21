@@ -18,15 +18,15 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
 
 // const Chart = require('../../../node_modules/chart.js/dist/Chart.js');
 
+
 window.addEventListener('load', function () {
-  // var ctx = document.getElementById('myChart').getContext('2d');
+
   var plotLineChart = document.querySelector('#line-chart');
   var on = true;
   var off = false;
 
   $('.picture__curtain').addClass('is-load');
 
-  // setTimeout(handler: any, timeout?: long, arguments...: any)
   setTimeout(function () {
     $(' .picture__img').removeClass('is-active');
     $(' .picture_on').addClass('is-active');
