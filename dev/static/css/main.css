@@ -851,8 +851,8 @@ p {
   left: 0;
   right: 0;
   height: 4px;
-  background-image: -webkit-repeating-linear-gradient(left, #E04660 4px, #E04660 8px, #fff 8px, #fff 12px);
-  background-image: repeating-linear-gradient(to right, #E04660 4px, #E04660 8px, #fff 8px, #fff 12px);
+  background-image: -webkit-repeating-linear-gradient(left, #E04660 4px, #E04660 8px, #F7F8FF 8px, #F7F8FF 12px);
+  background-image: repeating-linear-gradient(to right, #E04660 4px, #E04660 8px, #F7F8FF 8px, #F7F8FF 12px);
 }
 
 @media only screen and (max-width: 800px) {
@@ -861,8 +861,8 @@ p {
   }
   .toggler__desc:after {
     height: 2px;
-    background-image: -webkit-repeating-linear-gradient(left, #E04660 2px, #E04660 4px, #fff 4px, #fff 6px);
-    background-image: repeating-linear-gradient(to right, #E04660 2px, #E04660 4px, #fff 4px, #fff 6px);
+    background-image: -webkit-repeating-linear-gradient(left, #E04660 2px, #E04660 4px, #F7F8FF 4px, #F7F8FF 6px);
+    background-image: repeating-linear-gradient(to right, #E04660 2px, #E04660 4px, #F7F8FF 4px, #F7F8FF 6px);
   }
 }
 
