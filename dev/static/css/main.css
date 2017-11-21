@@ -557,14 +557,15 @@ p {
 
 .primo {
   display: none;
+  position: relative;
   width: 60vw;
   max-width: 640px;
   margin-right: 16px;
 }
 
 .picture {
-  position: relative;
   display: inline-block;
+  position: relative;
   vertical-align: top;
   width: 60vw;
   max-width: 640px;
@@ -590,6 +591,32 @@ p {
 
 .picture__img.is-active {
   opacity: 1;
+}
+
+.picture__shadow {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: calc( 100% * (293/380));
+  height: 83%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.picture__curtain {
+  background-color: #F7F8FF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.picture__curtain.is-load {
+  left: 100%;
+  -webkit-transition: left 2s ease-in 0s;
+  transition: left 2s ease-in 0s;
 }
 
 .literature {

@@ -1,8 +1,8 @@
 
 $(document).ready(function () {
 	$('.toggler__desc').on('click', function () {
-		$('.toggler__desc').removeClass('is-active');
-		$(this).addClass('is-active');
+		// $('.toggler__desc').removeClass('is-active');
+		// $(this).addClass('is-active');
 
 		if($(this).hasClass('toggler_on')){
 			$(this).parents('.toggler').find('.toggler__checkbox').addClass('is-active');
