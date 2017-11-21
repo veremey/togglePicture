@@ -1,0 +1,57 @@
+.diagramm
+	margin-bottom: 110px
+	+r(800)
+		margin-bottom: 50px
+	&__wrap
+		display: flex
+		align-items: center
+	&__title
+		font-size: 16px
+		line-height: .9
+		margin-bottom: 2em
+		text-align: center
+		color: #333333
+		+lm
+	&__pic
+		font-size: 0
+		max-width: 640px
+		margin-right: 20px
+	&__img
+		display: none
+	.is-shown
+		display: inline-block
+		vertical-align: top
+	&__toggler
+		margin-left: 20px
+
+#line-chart
+	position: relative
+	background-color: $n
+
+.primo
+	display: none
+	width: 60vw
+	max-width: 640px
+	// min-height: 300px
+	margin-right: 16px
+
+.picture
+	position: relative
+	display: inline-block
+	vertical-align: top
+	width: 60vw
+	max-width: 640px
+	height: calc(60vw * (293/636));
+	max-height: calc(640px * (293/636));
+	font-size: 0
+	// margin-bottom: 30px
+	&__img
+		position: absolute
+		+vcenter
+		max-width: 100%
+		max-height: 100%
+		opacity: 0
+		+tr(.6s)
+		will-change: opacity
+		&.is-active
+			opacity: 1
