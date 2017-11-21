@@ -185,6 +185,8 @@ window.addEventListener('load', function () {
 'use strict';
 
 $(document).ready(function () {
+	/*-----toggler__desc click -------*/
+	/*---------------------*/
 	$('.toggler__desc').on('click', function () {
 
 		if ($(this).hasClass('toggler_on')) {
@@ -197,7 +199,8 @@ $(document).ready(function () {
 			$('.picture_off').addClass('is-active');
 		}
 	});
-
+	/*-----toggler__btn click -------*/
+	/*---------------------*/
 	$('.toggler__btn').on('click', function (e) {
 		e.preventDefault();
 		var $toggler = $(this).parents('.toggler').find('.toggler__checkbox');

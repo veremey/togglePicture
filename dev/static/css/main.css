@@ -645,32 +645,6 @@ p {
   transition: transform 2s ease-in 0s, -webkit-transform 2s ease-in 0s;
 }
 
-.literature {
-  padding-bottom: 50px;
-}
-
-.literature__list {
-  font-size: 0;
-  margin-bottom: 10px;
-  padding-left: 16px;
-}
-
-.literature__item {
-  list-style-type: decimal;
-  font-size: 16px;
-  margin-bottom: 5px;
-  padding-left: 1em;
-  color: #333333;
-  font-family: 'lato-italic-webfont', Arial, sans-serif;
-}
-
-.literature__desc {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #333333;
-  font-family: 'lato-regular-webfont', Arial, sans-serif;
-}
-
 .rubric {
   margin-bottom: 90px;
 }
@@ -883,6 +857,32 @@ p {
 
 .toggler_on {
   top: 0;
+}
+
+.literature {
+  padding-bottom: 50px;
+}
+
+.literature__list {
+  font-size: 0;
+  margin-bottom: 10px;
+  padding-left: 16px;
+}
+
+.literature__item {
+  list-style-type: decimal;
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding-left: 1em;
+  color: #333333;
+  font-family: 'lato-italic-webfont', Arial, sans-serif;
+}
+
+.literature__desc {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #333333;
+  font-family: 'lato-regular-webfont', Arial, sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
