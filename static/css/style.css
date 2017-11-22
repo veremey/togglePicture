@@ -148,15 +148,15 @@ p { margin: 0; }
 
 .primo { display: none; position: relative; width: 60vw; max-width: 640px; margin-right: 16px; }
 
-.picture { display: inline-block; position: relative; vertical-align: top; width: 60vw; max-width: 640px; height: calc(60vw * (293/636)); max-height: calc(640px * (293/636)); font-size: 0; }
+.picture { display: inline-block; position: relative; vertical-align: top; width: 60vw; max-width: 640px; height: calc(60vw * (293/636)); max-height: calc(640px * (293/636)); font-size: 0; overflow: hidden; }
 .picture__img { position: absolute; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); max-width: 100%; max-height: 100%; opacity: 0; -o-transition: all 0.6s 0.2s; transition: all 0.6s 0.2s; will-change: opacity; }
 .picture__img.is-active { opacity: 1; }
 .picture__shadow { position: absolute; top: 0; left: 2px; width: calc( 100% * (293/380)); height: 83%; overflow: hidden; }
 .picture__curtain { background-color: #F7F8FF; position: absolute; top: 0; left: 0; width: 100%; height: 100%; left: 0; -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); will-change: transform; z-index: 2; }
 .picture__curtain.is-load { -webkit-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); transform: translateX(100%); -o-transition: -o-transform 2s ease-in 0s; transition: -webkit-transform 2s ease-in 0s; transition: transform 2s ease-in 0s; }
 .picture__curtain-duo { position: absolute; background-color: #F7F8FF; position: absolute; top: 0; left: 0; width: 100%; height: 100%; will-change: transform; }
-.picture__curtain-duo:after { content: ""; position: absolute; top: 0; bottom: 0; background-color: #F7F8FF; left: 40%; width: calc(100% - 40%); -o-transition: all 0.8s 0.2s; transition: all 0.8s 0.2s; }
-.picture__curtain-duo.is-load:after { left: 100%; }
+.picture__curtain-duo:after { content: ""; position: absolute; top: 0; bottom: 0; background-color: #F7F8FF; left: 40%; width: calc(100% - 40%); -o-transition: all 0.8s linear 0.2s; transition: all 0.8s linear 0.2s; }
+.picture__curtain-duo.is-active:after { left: 100%; }
 
 .picture_end { opacity: 1; }
 

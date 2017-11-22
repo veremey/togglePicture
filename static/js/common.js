@@ -12,11 +12,12 @@ $(document).ready(function () {
 		$(' .picture_on').addClass('is-active');
 		$('.toggler__checkbox').addClass('is-active');
 	}, 3000);
+
 	setTimeout(function () {
-		$('.picture__curtain-duo').addClass('is-load');
+		$('.picture__curtain-duo').addClass('is-active');
 	}, 3200);
 
-	$(document).ready(function () {
+
 	/*-----toggler__desc click -------*/
 	/*---------------------*/
 	$('.toggler__desc').on('click', function () {
@@ -24,10 +25,10 @@ $(document).ready(function () {
 		if ($(this).hasClass('toggler_on')) {
 			$(this).parents('.toggler').find('.toggler__checkbox').addClass('is-active');
 			$('.picture__img').removeClass('is-active');
-			$('.picture_on').addClass('is-active');
+			$('.picture_on, .picture__curtain-duo').addClass('is-active');
 		} else {
 			$(this).parents('.toggler').find('.toggler__checkbox').removeClass('is-active');
-			$('.picture__img').removeClass('is-active');
+			$('.picture__img, .picture__curtain-duo').removeClass('is-active');
 			$('.picture_off').addClass('is-active');
 		}
 	});
@@ -39,14 +40,13 @@ $(document).ready(function () {
 
 		if ($toggler.hasClass('is-active')) {
 			$toggler.removeClass('is-active');
-			$('.picture__img').removeClass('is-active');
+			$('.picture__img, .picture__curtain-duo').removeClass('is-active');
 			$('.picture_off').addClass('is-active');
 		} else {
 			$toggler.addClass('is-active');
 			$('.picture__img').removeClass('is-active');
-			$('.picture_on').addClass('is-active');
+			$('.picture_on, .picture__curtain-duo').addClass('is-active');
 		}
 	});
 });
 
-});

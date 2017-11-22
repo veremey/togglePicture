@@ -50,6 +50,7 @@
 	height: calc(60vw * (293/636))
 	max-height: calc(640px * (293/636))
 	font-size: 0
+	overflow: hidden
 	+r(750)
 		width: 70vw
 		height: calc(70vw * (293/636))
@@ -93,8 +94,8 @@
 			background-color: $body
 			left: 40%
 			width: calc(100% - 40%)
-			transition: all .8s .2s
-		&.is-load
+			transition: all .8s linear .2s
+		&.is-active
 			&:after
 				left: 100%
 
