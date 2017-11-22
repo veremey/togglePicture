@@ -1,0 +1,201 @@
++font('firasans-bold-webfont', 'firasans-bold-webfont')
++font('firasans-extrabold-webfont', 'firasans-extrabold-webfont')
++font('firasans-semibold-webfont', 'firasans-semibold-webfont')
++font('firasans-light-webfont', 'firasans-light-webfont')
++font('firasans-extralight-webfont', 'firasans-extralight-webfont')
++font('firasans-medium-webfont', 'firasans-medium-webfont')
++font('firasans-regular-webfont', 'firasans-regular-webfont')
+
+//+font('roboto-regular-webfont', 'roboto-regular-webfont')
+
++font('pt_sans_regular-webfont', 'pt_sans_regular-webfont')
++font('pt_sans_bold-webfont', 'pt_sans_bold-webfont')
+
+=rr
+	// font-family: 'roboto-regular-webfont', Arial, sans-serif//!!!!!!!!
+	font-family: 'pt_sans_regular-webfontt', Arial, sans-serif
+
+=pr
+	font-family: 'pt_sans_regular-webfont', Arial, sans-serif
+=pb
+	font-family: 'pt_sans_bold-webfont', Arial, sans-serif
+=pi
+	+pr
+	font-style: italic
+=fb
+	font-family: 'firasans-bold-webfont', Arial, sans-serif
+=fe
+	font-family: 'firasans-extrabold-webfont', Arial, sans-serif
+=fsb
+	font-family: 'firasans-semibold-webfont', Arial, sans-serif
+=fl
+	font-family: 'firasans-light-webfont', Arial, sans-serif
+=fel
+	font-family: 'firasans-extralight-webfont', Arial, sans-serif
+=fm
+	font-family: 'firasans-medium-webfont', Arial, sans-serif
+=fr
+	font-family: 'firasans-regular-webfont', Arial, sans-serif
+
+
+// colors
+$n: transparent
+$blue: #0089d7
+$black: #1d242c
+$dark: #3d444c
+$yellow: #FFC047
+$orange: #fd8200
+$gray: #f6f6f6
+$border: #E2E2E2
+
+// size
+$max-width: 1160px
+
+html
+	+selection
+		background: rgba(0, 0, 0, .2)
+		color: #fff
+
+body
+	min-width: 200px
+	font-family:  Arial, sans-serif
+	font-size: 13px
+	-webkit-font-smoothing: antialiased !important
+	backface-visibility: hidden
+
+// common blocks
+.out
+	position: relative
+	background-color: #fff
+	+clr
+
+.layout
+	max-width: $max-width
+	width: 96%
+	margin: 0 auto
+	+r(1200)
+		width: 100%
+		padding: 0 20px
+	&-flex
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-b
+		+r(1200)
+			padding: 0 0 0 20px
+			.baum
+				margin-right: 0
+				+r(880)
+					padding-right: 20px
+
+.desc
+	&-l
+		font-size: 14px
+		line-height: 1.4
+		color: #777
+		+pr
+		&.mod-col
+			display: inline-block
+			width: 48%
+			margin-right: 3%
+			&:nth-child(odd)
+				margin-right: 0
+			+r(650)
+				width: 100%
+				margin-right: 0
+		&.mod-date
+			+fr
+		&.mod-ital
+			font-style: italic
+		time
+			display: inline-block
+			font-size: 14px
+			left: 1.4em
+			margin-top: -10px
+			margin-bottom: 20px
+			+fr
+	&-ml
+		font-size: 14px
+		line-height: 1.4
+		color: #777
+		+fm
+	&-n
+		font-size: 16px
+		color: #777
+		+pr
+		sup
+			top: -1em
+			font-size: 12px
+			color: $orange
+			+pi
+	&-m
+		font-size: 18px
+		color: #777
+		+pr
+	&-list
+		position: relative
+		padding-left: 15px
+		&:before
+			content: ''
+			position: absolute
+			top: 7px
+			left: 0
+			display: inline-block
+			width: 6px
+			height: 6px
+			border-radius: 100%
+			background-color: $orange
+	&-b
+		font-size: 20px
+		color: $orange
+		+pb
+	&-h
+		font-size: 14px
+		line-height: 45px
+		+pr
+		color: #777
+	&-bold
+		font-size: 14px
+		line-height: 35px
+		color: #777
+		+pb
+
+.link
+	font-size: 14px
+	line-height: inherit
+	color: $blue
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 .8em
+	font-weight: normal
+	line-height: 1.1
+h1
+	font-size: 2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.6em
+h4
+	font-size: 1.5em
+h5
+	font-size: 1.4em
+h6
+	font-size: 1.3em
+
+a
+	text-decoration: none
+
+b, strong
+	font-weight: normal
+
+p
+	margin-bottom: 0
+
+hr
+	border: none
+	border-top: 1px solid $border
+	margin: 0

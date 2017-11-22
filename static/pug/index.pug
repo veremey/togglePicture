@@ -1,0 +1,59 @@
+extends _layout
+block content
+
+
+	section.page__wrapper
+		h3.page__title
+			| Глимепирид обладает уникальным двойным механизмом действия
+			sup 1
+		.diagramm
+			h4.diagramm__title Механизм действия препарата глимепирид
+			.diagramm__wrap
+				div.picture
+					div.picture__shadow
+						div.picture__curtain
+					div.picture__curtain-duo
+						img(src="static/img/slid-02-3.png" alt="pic" class="picture__img picture_end")
+
+					img(src="static/img/slid-01.png" alt="pic" class="picture__img picture_off is-active")
+					img(src="static/img/slid-02-2.png" alt="pic" class="picture__img picture_on")
+
+
+				.diagramm__toggler
+					.toggler(tabindex='0')
+						a.toggler__checkbox(href='#', tabindex='0')
+						a.toggler__btn(href='#')
+						.toggler__text
+							p.toggler__desc.toggler_off.is-active Без терапии
+							p.toggler__desc.toggler_on Терапия глимепиридом
+		.rubric
+			.rubric__row
+				.rubric__pic
+					img.rubric__img(src='static/img/blood-test.svg', alt='picture')
+				p.rubric__desc
+					| Глимепирид — единственный препарат сульфонилмочевины, воздействующий на два механизма повышения уровня сахара крови при сахарном диабете 2 типа. Препарат стимулирует секрецию инсулина и снижает инсулинорезистентность1,2,3;
+			.rubric__row
+				.rubric__pic
+					img.rubric__img(src='static/img/arrow.svg', alt='picture')
+				p.rubric__desc
+					| За счет двойного механизма действия глимепирид обеспечивает сахароснижающий эффект3. Глимепирид демонстрирует низкий риск развития гипогликемии в условиях реальной клинической практики в России4,5,6;
+			.rubric__row
+				.rubric__pic
+					img.rubric__img(src='static/img/cell.svg', alt='picture')
+				p.rubric__desc
+					| Глимепирид бережно воздействует на бета-клетки, защищая их от преждевременного истощения1,2.
+		section.literature
+			h4.page__title.mod-left Литература
+			ul.literature__list
+				li.literature__item Müller G et al. Diabetes Res Clin Pract 1995;28 (Suppl) : S115–37;
+				li.literature__item Massi-Benedetti M. Clin Ther 2003;25:799–816.
+				li.literature__item Инструкция по медицинскому применению препарата Амарил®.
+				li.literature__item
+					| Зайцева Н. В. с соавт. Применение комбинированной терапии глимепиридом и метформином у пациентов с сахарным
+					br
+					|  диабетом 2 типа. Результаты российского обсервационного исследования. Фарматека 2014 №16.
+				li.literature__item
+					| Глинкина И. В. с соавт. Эффективность и безопасность свободной комбинации глимепирида и метформина у пациентов с сахарным диабетом 2-го типа в условиях реальной клинической практики: наблюдательная программа //Эффективная фармакотерапия. Эндокринология 2/2012: 16-20.
+				li.literature__item
+					| Мкртумян А. М. Результаты наблюдательного исследования ESCALATION: особенности применения глимепирида у пациентов с сахарным диабетом 2-го типа, не достигших целевых показателей углеводного обмена на фоне терапии ингибитором ДПП-4 в комбинации с метформином. Проблемы эндокринологии. 2017; 1: 30-38.
+			p.literature__desc SARU.GLI.17.10.1861.

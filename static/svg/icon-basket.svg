@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 382.5 331.333" style="enable-background:new 0 0 382.5 331.333;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#fff; fill: #fff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{stroke:#fff; fill: #fff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M244.66,235.102H46.102L4.5,44.059h232.842c4.374,0,7.919,3.546,7.919,7.92v0c0,4.374-3.546,7.92-7.919,7.92
+		H24.898l34.723,159.364h173.117L309.66,4.5h59.48c4.617,0,8.359,3.743,8.359,8.359v0c0,4.617-3.743,8.359-8.359,8.359H321.5
+		L244.66,235.102z M244.66,235.102"/>
+	<path class="st1" d="M99.991,328.614c-15.602,0-28.419-12.608-28.419-28.473c0-15.866,12.818-28.474,28.419-28.474
+		c15.604,0,28.422,12.608,28.422,28.474C128.413,316.006,115.595,328.614,99.991,328.614L99.991,328.614z M99.991,282.595"/>
+	<path class="st1" d="M182.325,328.614c-15.602,0-28.419-12.608-28.419-28.473c0-15.866,12.818-28.474,28.419-28.474
+		c15.604,0,28.422,12.608,28.422,28.474C210.747,316.006,197.929,328.614,182.325,328.614L182.325,328.614z M182.325,282.595"/>
+</g>
+</svg>
